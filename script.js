@@ -1,52 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion functionality
-    const faqItems = document.querySelectorAll('.faq-item');
+    const accordionItems = document.querySelectorAll('.accordion-item');
 
-    faqItems.forEach(item => {
-        const header = item.querySelector('.faq-header');
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
         
         header.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
             // Close all items
-            faqItems.forEach(faq => {
-                faq.classList.remove('active');
-                const icon = faq.querySelector('.toggle-icon');
-                if(icon) {
-                    icon.classList.remove('fa-minus');
-                    icon.classList.add('fa-plus');
-                }
+            accordionItems.forEach(acc => {
+                acc.classList.remove('active');
             });
 
             // If clicked was not active, open it
             if (!isActive) {
                 item.classList.add('active');
-                const icon = item.querySelector('.toggle-icon');
-                if(icon) {
-                    icon.classList.remove('fa-plus');
-                    icon.classList.add('fa-minus');
-                }
             }
         });
     });
 
-    // Testimonial Navigation Stub
-    const prevBtn = document.querySelector('.nav-btn.prev');
-    const nextBtn = document.querySelector('.nav-btn.next');
-    const cards = document.querySelectorAll('.testimonial-card');
-    let currentIndex = 1; // Middle card active initially
+    // Smooth scrolling for Anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    if (prevBtn && nextBtn && cards.length > 0) {
-        prevBtn.addEventListener('click', () => {
-            cards[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
-            cards[currentIndex].classList.add('active');
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
-
-        nextBtn.addEventListener('click', () => {
-            cards[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
-            cards[currentIndex].classList.add('active');
-        });
-    }
+    });
 });

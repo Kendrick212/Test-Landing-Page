@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LING's Learn</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>HNG Learn</title>
+    <!-- Google Fonts: Bricolage Grotesque -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar container">
-        <div class="logo">
-            <span class="logo-icon">L</span>
-            <strong>LING</strong>'s Learn
+    <nav class="navbar sticky">
+        <div class="container nav-container">
+            <div class="logo">
+                <strong>HNG</strong> Learn
+            </div>
+            <ul class="nav-links">
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm">Join HNG Learn</a>
+            <!-- Mobile Menu Toggle (Optional) -->
+            <button class="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
         </div>
-        <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <button class="btn btn-primary btn-sm">Sign Up</button>
     </nav>
 
     <!-- Hero Section -->
@@ -31,256 +35,265 @@
         <div class="container hero-content">
             <div class="pill-badge">
                 <div class="avatars">
-                    <img src="https://i.pravatar.cc/150?img=11" alt="student">
-                    <img src="https://i.pravatar.cc/150?img=12" alt="student">
-                    <img src="https://i.pravatar.cc/150?img=13" alt="student">
+                    <img src="https://i.pravatar.cc/150?img=11" alt="user">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="user">
+                    <img src="https://i.pravatar.cc/150?img=13" alt="user">
                 </div>
-                <span>Over 500+ Students Let's Go!</span>
+                <span>Over 1000+ happy users</span>
             </div>
             
-            <img src="https://cdn-icons-png.flaticon.com/512/2836/2836566.png" class="hero-decoration dec-1" alt="">
-            <img src="https://cdn-icons-png.flaticon.com/512/2916/2916315.png" class="hero-decoration dec-2" alt="">
-            
-            <h1>Your Second Chance to Learn <br>Starts <span>Here!</span></h1>
-            <p class="hero-subtitle">LING's Learn helps you upskill & transition your career, giving you the necessary expertise to thrive in the modern tech ecosystem.</p>
+            <h1>Your Second Chance to Learn <br>Starts <span class="highlight">Here!</span></h1>
+            <p class="hero-subtitle">HNG Learn helps people continue their journey in tech with structure, mentorship, and hands-on learning even after the internship.</p>
             
             <div class="hero-actions">
-                <button class="btn btn-primary">Get Started</button>
-                <button class="btn btn-outline">Learn More</button>
+                <a href="#" class="btn btn-primary">Join HNG Learn</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
             </div>
 
             <div class="hero-images">
-                <div class="hero-img-col main">
-                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Students learning" class="img-main">
+                <div class="img-card card-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Students working together">
                 </div>
-                <div class="hero-img-col left">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Student working" class="img-side">
+                <div class="img-card card-center">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Student on laptop">
                 </div>
-                <div class="hero-img-col right">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Students collaborating" class="img-side">
+                <div class="img-card card-right">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Coding together">
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Info Banner -->
-    <section class="info-banner">
-        <div class="container info-banner-inner">
-            <h2>Why Should I<br>Sign-Up for<br>LING's Learn?</h2>
-            <p>Our company goes above and beyond providing the traditional knowledge by offering an immersive, comprehensive environment designed to help you not just learn but thrive in.</p>
+    <!-- Why Sign Up Strip -->
+    <section class="info-strip">
+        <div class="container strip-grid">
+            <div class="strip-left">
+                <h2>Why Should I<br>Sign-up for<br>HNG's Learn?</h2>
+            </div>
+            <div class="strip-right">
+                <p>Continue your tech journey with structure, mentorship, and community support. Our environment is designed to help you not just learn, but truly thrive and build the momentum you need for a successful career in the tech industry.</p>
+            </div>
         </div>
     </section>
 
     <!-- Tracks Section -->
-    <section class="tracks container">
-        <div class="section-header">
-            <h2>Tracks / Courses Covered</h2>
-            <p class="section-desc">Select the learning track that aligns with your goals and aspirations in the tech industry. Explore specific programs tailored to your needs.</p>
-        </div>
-        
-        <div class="track-list">
-            <div class="track-item">
-                <div class="track-info">
-                    <span class="track-icon">🎨</span>
-                    <h3>Product Design</h3>
-                </div>
-                <p>Master UI/UX, user research, wireframing, prototyping, and aesthetics to create stunning user-centric digital products & interfaces.</p>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    <section id="tracks" class="tracks section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tracks / Courses Covered</h2>
             </div>
             
-            <div class="track-item">
-                <div class="track-info">
-                    <span class="track-icon">💻</span>
-                    <h3>Frontend Development</h3>
+            <div class="track-list">
+                <!-- Track 1 -->
+                <div class="track-row">
+                    <div class="track-info">
+                        <div class="track-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Product Design</h3>
+                    </div>
+                    <p class="track-desc">Learn UX fundamentals, wireframing and solving real problems through an iterative design process and user empathy.</p>
+                    <div class="track-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
-                <p>Learn real-world front-end engineering with modern frameworks like React, Vue or Angular, driving engaging user experiences.</p>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            
-            <div class="track-item">
-                <div class="track-info">
-                    <span class="track-icon">📦</span>
-                    <h3>Backend Development</h3>
+                <!-- Track 2 -->
+                <div class="track-row">
+                    <div class="track-info">
+                        <div class="track-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <p class="track-desc">Master HTML, CSS and JavaScript to build responsive interfaces, dynamic applications and flawless user experiences.</p>
+                    <div class="track-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
-                <p>Build robust server-side architecture, manage databases, API development and more to power robust web applications.</p>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            
-            <div class="track-item">
-                <div class="track-info">
-                    <span class="track-icon">📱</span>
-                    <h3>Mobile Development</h3>
+                <!-- Track 3 -->
+                <div class="track-row">
+                    <div class="track-info">
+                        <div class="track-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <p class="track-desc">Build scalable APIs, manage databases, and create robust backend systems that power modern cloud applications.</p>
+                    <div class="track-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
-                <p>Develop native or cross-platform mobile apps using Swift, Kotlin or Flutter to build powerful software on the go.</p>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            
-            <div class="track-item">
-                <div class="track-info">
-                    <span class="track-icon">📊</span>
-                    <h3>Project Management</h3>
+                <!-- Track 4 -->
+                <div class="track-row">
+                    <div class="track-info">
+                        <div class="track-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h3>Mobile Development</h3>
+                    </div>
+                    <p class="track-desc">Design and build native or cross-platform mobile apps using the latest technologies and best practices.</p>
+                    <div class="track-arrow"><i class="fa-solid fa-arrow-right"></i></div>
                 </div>
-                <p>Learn Agile methodologies, sprint planning, and team motivation leadership to manage schedules successfully across teams.</p>
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <!-- Track 5 -->
+                <div class="track-row">
+                    <div class="track-info">
+                        <div class="track-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>Project Management</h3>
+                    </div>
+                    <p class="track-desc">Plan effectively, manage timelines, master agile methodologies and use collaboration tools to guide teams to success.</p>
+                    <div class="track-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits container">
-        <div class="section-header">
-            <h2>What You'll Gain</h2>
-            <p class="section-desc">Acquire highly demanded skills and get access to exclusive benefits designed to accelerate your career growth.</p>
-        </div>
-        
-        <div class="benefit-grid">
-            <div class="benefit-card">
-                <div class="icon-wrapper blue"><i class="fa-solid fa-handshake"></i></div>
-                <h4>Industry Mentors</h4>
-                <p>Gain insights, advice, and direct guidance from industry pros who know the ins and outs of the tech industry.</p>
+    <!-- What You'll Gain -->
+    <section class="benefits section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You'll Gain</h2>
             </div>
-            <div class="benefit-card">
-                <div class="icon-wrapper red"><i class="fa-solid fa-users"></i></div>
-                <h4>Vast Community Access</h4>
-                <p>Join a network of individuals who share similar goals, ambitions, and learning experiences.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon-wrapper purple"><i class="fa-solid fa-laptop-code"></i></div>
-                <h4>Practical Portfolio</h4>
-                <p>Work on multiple real-world relevant projects enabling you to build up a substantial portfolio by the end of your track.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon-wrapper yellow"><i class="fa-solid fa-briefcase"></i></div>
-                <h4>Career Guidance</h4>
-                <p>Receive specialized mentoring sessions targeting CV writing, interview preparation and career mapping.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon-wrapper pink"><i class="fa-solid fa-rocket"></i></div>
-                <h4>Fast-Track Placements</h4>
-                <p>Gain access to exclusive placement opportunities directly with hiring partners looking for fresh talent.</p>
-            </div>
-            <div class="benefit-card">
-                <div class="icon-wrapper green"><i class="fa-solid fa-certificate"></i></div>
-                <h4>Certification</h4>
-                <p>Receive a recognized certification upon completing the track, showcasing your expertise to potential employers.</p>
+            
+            <div class="benefit-grid">
+                <div class="card">
+                    <div class="icon-square soft-blue"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4>Hands-on Learning</h4>
+                    <p>Apply theoretical knowledge immediately to practical tasks to reinforce your understanding.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-square soft-purple"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <h4>Mentorship & Guidance</h4>
+                    <p>Get personalized feedback and career advice from experienced industry professionals.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-square soft-green"><i class="fa-solid fa-book-open"></i></div>
+                    <h4>Structured Curriculum</h4>
+                    <p>Follow a clear, proven pathway designed to take you from fundamentals to advanced concepts.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-square soft-red"><i class="fa-solid fa-users"></i></div>
+                    <h4>Community Support</h4>
+                    <p>Join a network of fellow learners and alumni to collaborate on ideas and projects.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-square soft-yellow"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h4>Real-world Projects</h4>
+                    <p>Solve actual industry problems to build a strong portfolio that stands out to recruiters.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-square soft-teal"><i class="fa-solid fa-certificate"></i></div>
+                    <h4>Certification</h4>
+                    <p>Earn a recognized certificate of completion to showcase your skills to future employers.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials container">
-        <div class="section-header">
-            <h2>What Our Clients Say</h2>
-        </div>
-        
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                <p class="testimonial-text">"Before LING's Learn, the thought of transitioning to tech felt daunting. Their Product Design track changed everything."</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=5" alt="Client">
-                    <div>
-                        <h5>Sarah Jenkins</h5>
-                        <span>Product Designer</span>
-                    </div>
-                </div>
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
             </div>
-            <div class="testimonial-card active">
-                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                <p class="testimonial-text">"I couldn't be happier with my decision to join LING's learn! The frontend track was incredibly well-structured."</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=1" alt="Client">
-                    <div>
-                        <h5>John Doe</h5>
-                        <span>Frontend Dev</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-                <p class="testimonial-text">"The mentoring I received was top notch. Through LING's program I secured my dream role in tech!"</p>
-                <div class="client-info">
-                    <img src="https://i.pravatar.cc/150?img=9" alt="Client">
-                    <div>
-                        <h5>Emily Chen</h5>
-                        <span>Project Manager</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-controls">
-            <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button class="nav-btn next"><i class="fa-solid fa-chevron-right"></i></button>
-        </div>
-    </section>
-
-    <!-- FAQs -->
-    <section class="faq-section">
-        <div class="container faq-container">
-            <h2 class="faq-title">FAQs</h2>
             
-            <div class="faq-list">
-                <div class="faq-item active">
-                    <div class="faq-header">
-                        <i class="fa-solid fa-minus toggle-icon"></i>
-                        <h4>What is LING's Learn?</h4>
-                    </div>
-                    <div class="faq-content">
-                        <p>LING's Learn is an interactive e-learning platform providing tailored tech education specifically structured to help passionate individuals find their footing in modern tech fields through practical training and industry mentoring.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-header">
-                        <i class="fa-solid fa-plus toggle-icon"></i>
-                        <h4>Is LING's Learn free?</h4>
-                    </div>
-                    <div class="faq-content">
-                        <p>We offer both free introductory modules and premium comprehensive tracks. Scholarship opportunities are also available for eligible candidates.</p>
+            <div class="testimonial-grid">
+                <div class="card testimonial-card">
+                    <p class="quote">"HNG Learn transformed my skills completely. The mentorship was incredible and gave me the confidence I needed."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Sarah J.">
+                        <div class="author-info">
+                            <strong>Sarah Jenkins</strong>
+                            <span>Product Designer</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-header">
-                        <i class="fa-solid fa-plus toggle-icon"></i>
-                        <h4>How long do the tracks take?</h4>
-                    </div>
-                    <div class="faq-content">
-                        <p>Most of our comprehensive tracks are designed to be completed within 12 to 16 weeks, requiring approximately 15-20 hours of commitment per week.</p>
+                <div class="card testimonial-card">
+                    <p class="quote">"The structured curriculum and real-world projects helped me land my first role right after completing the tracks."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Michael T.">
+                        <div class="author-info">
+                            <strong>Michael T.</strong>
+                            <span>Frontend Developer</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="faq-item">
-                    <div class="faq-header">
-                        <i class="fa-solid fa-plus toggle-icon"></i>
-                        <h4>Will I get a certificate after completing the program?</h4>
-                    </div>
-                    <div class="faq-content">
-                        <p>Yes, all graduates receive a verified digital certificate that you can showcase on your resume and LinkedIn profile.</p>
+                <div class="card testimonial-card">
+                    <p class="quote">"I loved the community support. Being able to ask questions and solve problems together was a game changer."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/150?img=9" alt="Emily C.">
+                        <div class="author-info">
+                            <strong>Emily Chen</strong>
+                            <span>Project Manager</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer CTA and Footer -->
-    <footer class="footer">
-        <div class="footer-cta container">
-            <h2>Ready to Continue Your Journey?</h2>
-            <p>Join a community of enthusiastic learners and mentors dedicated to pushing your limits and elevating your career in the tech industry today.</p>
-            <button class="btn btn-primary">Get Started</button>
+    <!-- FAQ -->
+    <section class="faq section-padding bg-light">
+        <div class="container faq-container">
+            <div class="section-header">
+                <h2>FAQs</h2>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is HNG Learn?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>HNG Learn is an immersive learning platform designed to help passionate individuals level up their tech skills through practical training, mentorship, and real-world projects.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Who can join HNG Learn?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Anyone passionate about tech, from beginners looking to start their journey to advanced learners wanting to refine their skills and build an impressive portfolio.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is HNG Learn free?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We provide multiple flexible tiers, including accessible foundational materials and premium guided tracks that feature more intensive mentorship.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How does HNG Learn work?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You select a track and learn through a series of hands-on projects, assisted by mentors and a vibrant community of peers to guide you along the way.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Will I get a certificate after completing the program?
+                        <i class="fa-solid fa-chevron-down icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, upon successful completion of your selected learning track, you will be awarded a verifiable certificate to add to your resume and LinkedIn.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer-bottom container">
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container cta-container">
+            <h2>Ready to Continue Your Journey?</h2>
+            <p>Continue your tech journey with structure, mentorship, and community support.</p>
+            <a href="#" class="btn btn-primary btn-large">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
             <div class="logo">
-                <span class="logo-icon blue">L</span>
-                <strong>LING</strong>'s Learn
+                <strong>HNG</strong> Learn
             </div>
             <ul class="footer-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
     </footer>
